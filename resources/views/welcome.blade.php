@@ -41,7 +41,7 @@
                             <div class="card">
                                 <div class="card-body">
                                     <div>
-                                        <label class="form-label"> Admission Number (***********/2022)</label>
+                                        <label class="form-label"><b>Admission Number</b>  <i>[03106106092/2022]</i> </label>
                                         <input type="text" class="form-control" name="admissionNumber" required>
                                     </div>
                                 </div>

@@ -29,7 +29,7 @@
                 <div class="flex justify-center pt-8  sm:pt-0">
                    <img src="{{asset('logo.png')}}" alt="logo" class="rounded">
                 </div>
-                <div class="mt-2" >
+                <div class="mt-3" >
                     <h3 class="flex justify-center">KOITALEEL SAMOEI UNIVERSITY COLLEGE</h3>
                     <h3 class="flex justify-center">KUCCPS ADMISSION</h3>
                 </div>
@@ -37,8 +37,8 @@
 
 
 
-                        <form>
-                            <div class="card">
+                        <form >
+                            <div class="card mt-2">
                                 <div class="card-body">
                                     <div>
                                         <label class="form-label"><b>Admission Number</b>  <i>[03106106092/2022]</i> </label>

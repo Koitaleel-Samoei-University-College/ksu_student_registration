@@ -46,7 +46,7 @@
                                     </div>
                                 </div>
                                 <div class="card-footer align-content-end">
-                                    <button class="btn btn-success btn-sm"><i class="bi bi-card-heading"></i> Generate Admission Number</button>
+                                    <button class="btn btn-success btn-sm"><i class="bi bi-card-heading"></i> Generate Admission Letter</button>
                                 </div>
 
                             </div>

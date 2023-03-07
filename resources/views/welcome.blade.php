@@ -35,8 +35,13 @@
                 </div>
 
 
+                <button class=" btn btn-danger btn-sm mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample"><i class="bi bi-file-earmark-word"></i> How To Instructions</button>
 
-
+                        <div class="collapse" id="collapseWidthExample">
+                            <div class="mt2 mb-2 card card-body">
+                            sdfsdfsdf
+                            </div>
+                        </div>
                         <form >
                             <div class="card mt-2">
                                 <div class="card-body">
@@ -45,7 +50,7 @@
                                         <input type="text" class="form-control" name="admissionNumber" required>
                                     </div>
                                 </div>
-                                <div class="card-footer align-content-end">
+                                <div class="card-footer d-grid gap-2 d-md-flex justify-content-md-end">
                                     <button class="btn btn-success btn-sm"><i class="bi bi-card-heading"></i> Generate Admission Letter</button>
                                 </div>
 
@@ -57,5 +62,6 @@
 
             </div>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     </body>
 </html>

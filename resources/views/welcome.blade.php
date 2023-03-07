@@ -35,12 +35,14 @@
                 </div>
 
 
-                <button class=" btn btn-danger btn-sm mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample"><i class="bi bi-file-earmark-word"></i> How To Instructions</button>
+                <button class=" btn btn-primary btn-sm mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample"><i class="bi bi-file-earmark-word"></i> How To Instructions</button>
 
                         <div class="collapse" id="collapseWidthExample">
-                            <div class="mt2 mb-2 card card-body">
-                            sdfsdfsdf
-                            </div>
+                                <ol class="mt2 mb-2 list-group list-group-numbered">
+                                    <li class="list-group-item">Test</li>
+                                    <li class="list-group-item">Test</li>
+                                    <li class="list-group-item">Test</li>
+                                </ol>
                         </div>
                         <form >
                             <div class="card mt-2">
@@ -51,7 +53,7 @@
                                     </div>
                                 </div>
                                 <div class="card-footer d-grid gap-2 d-md-flex justify-content-md-end">
-                                    <button class="btn btn-success btn-sm"><i class="bi bi-card-heading"></i> Generate Admission Letter</button>
+                                    <button class="btn btn-success btn-sm"><i class="bi bi-file-earmark-pdf"></i> Generate Admission Letter</button>
                                 </div>
 
                             </div>

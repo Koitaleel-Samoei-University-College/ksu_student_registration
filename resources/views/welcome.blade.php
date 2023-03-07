@@ -53,7 +53,7 @@
                                     </div>
                                 </div>
                                 <div class="card-footer d-grid gap-2 d-md-flex justify-content-md-end">
-                                    <button class="btn btn-success btn-sm"><i class="bi bi-file-earmark-pdf"></i> Generate Admission Letter</button>
+                                    <button class="btn btn-success btn-sm"><i class="bi bi-file-earmark-pdf"></i> Download Admission Letter</button>
                                 </div>
 
                             </div>

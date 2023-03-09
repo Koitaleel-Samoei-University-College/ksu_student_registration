@@ -20,6 +20,7 @@
                                 {{ session('status') }}
                             </div>
                         @endif
+                        
 
                             <form action="{{ route('file-import') }}" method="POST" enctype="multipart/form-data">
                                 @csrf
@@ -27,7 +28,12 @@
                                 <div class="form-group mb-4" style="max-width: 500px; margin: 0 auto;">
                                     <div class="custom-file text-left">
                                         <label class="form-label" for="customFile">Choose file</label>
-                                        <input type="file" name="file" class="form-control" id="customFile">
+                                        <input type="file" name="file" class="form-control @error('file') is-invalid @enderror" id="customFile" >
+                                        @error('file')
+                                        <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                        @enderror
                                     </div>
                                 </div>
                                 <button class="btn btn-primary btn-sm"><i class="bi bi-cloud-upload"></i> Import data</button>

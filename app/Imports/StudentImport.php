@@ -3,17 +3,21 @@
 namespace App\Imports;
 
 use App\Models\Student;
+use Illuminate\Database\Eloquent\Model;
+use Maatwebsite\Excel\Concerns\Importable;
 use Maatwebsite\Excel\Concerns\ToModel;
 use Maatwebsite\Excel\Concerns\WithStartRow;
+use Maatwebsite\Excel\Concerns\WithValidation;
 
-class StudentImport implements ToModel, WithStartRow
+class StudentImport implements ToModel, WithStartRow, WithValidation
 {
+    use Importable;
     /**
-    * @param array $row
-    *
-    * @return \Illuminate\Database\Eloquent\Model|null
-    */
-    public function model(array $row)
+     * @param array $row
+     *
+     * @return Model|Student|null
+     */
+    public function model(array $row): Model|Student|null
     {
         return new Student([
         'indexNumber' => $row[1],
@@ -34,7 +38,15 @@ class StudentImport implements ToModel, WithStartRow
 
     public function startRow(): int
     {
-        // TODO: Implement startRow() method.
         return 2;
+    }
+
+    public function rules(): array
+    {
+        return [
+            'indexNumber' => [
+                'unique:students'
+            ],
+        ];
     }
 }

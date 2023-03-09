@@ -25,7 +25,16 @@ class KuccpsUploadController extends Controller
      */
     public function fileImport(Request $request): RedirectResponse
     {
-        Excel::import(new StudentImport, $request->file('file')->store('temp'));
-        return redirect('/students');
+        $request->validate([
+            'file' => 'required'
+        ]);
+        try{
+            Excel::import(new StudentImport, $request->file('file')->store('temp'));
+            return redirect('/students');
+        } catch (\Throwable $e){
+//            dd($e->getMessage());
+            return back()->withException($e);
+        }
+
     }
 }

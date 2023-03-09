@@ -3,6 +3,13 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
+        <div class="col-md-3">
+            <ul class="list-group">
+                <a href="/file-import" class="list-group-item">Upload KUCCPS LIST</a>
+                <li class="list-group-item">Admission Letters</li>
+                <a href="/students" class="list-group-item">Student List</a>
+            </ul>
+        </div>
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ __('Dashboard') }}</div>

@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\KuccpsUploadController;
+use App\Http\Controllers\StudentListController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +22,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::post('file-import', [KuccpsUploadController::class, 'fileImport'])->name('file-import');
+Route::get('file-import', [KuccpsUploadController::class, 'index'])->name('file-import');
+
+Route::get('/students', [StudentListController::class, 'index'])->name('students');

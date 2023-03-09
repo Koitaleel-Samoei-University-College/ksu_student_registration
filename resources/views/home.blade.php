@@ -5,9 +5,9 @@
     <div class="row justify-content-center">
         <div class="col-md-3">
             <ul class="list-group">
-                <a href="{{route('file-import')}}" class="list-group-item">Upload KUCCPS LIST</a>
+                <a href="{{route('file-import')}}" class="list-group-item"><i class="bi bi-cloud-upload"></i> Upload KUCCPS LIST</a>
                 <li class="list-group-item">Admission Letters</li>
-                <a href="{{route('students')}}" class="list-group-item">Student List</a>
+                <a href="{{route('students')}}" class="list-group-item"> <i class="bi bi-card-list"></i> Student List</a>
             </ul>
         </div>
         <div class="col-md-8">

@@ -12,7 +12,7 @@
             </div>
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">{{ __('KUCCPS File Import') }}</div>
+                    <div class="card-header"><i class="bi bi-file-earmark-excel"></i> {{ __('KUCCPS File Import') }}</div>
 
                     <div class="card-body">
                         @if (session('status'))

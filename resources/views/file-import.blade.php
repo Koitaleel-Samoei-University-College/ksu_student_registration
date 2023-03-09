@@ -30,7 +30,7 @@
                                         <input type="file" name="file" class="form-control" id="customFile">
                                     </div>
                                 </div>
-                                <button class="btn btn-primary">Import data</button>
+                                <button class="btn btn-primary btn-sm"><i class="bi bi-cloud-upload"></i> Import data</button>
                             </form>
                     </div>
                 </div>

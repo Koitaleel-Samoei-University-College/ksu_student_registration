@@ -4,9 +4,9 @@
     <div class="container">
         <div class="row justify-content-center">
             @include('layouts.sidebar')
-            <div class="col-md-8">
+            <div class="col-md-9">
                 <div class="card">
-                    <div class="card-header"><i class="bi bi-people"></i> {{ __('Students List') }}</div>
+                    <div class="card-header">{{ __('Dashboard') }}</div>
 
                     <div class="card-body">
                         @if (session('status'))
@@ -14,32 +14,34 @@
                                 {{ session('status') }}
                             </div>
                         @endif
+                        <div class="mt-3 mb-3">
+                        <a href="{{route('programs.create')}}" class="btn btn-primary btn-sm">Add Program</a>
+                        </div>
 
-                        <table class="table table-striped table-bordered">
+                        <div class="table-responsive mt-2">
+                        <table class="table table-bordered">
                             <thead>
                             <tr>
                                 <th>#</th>
-                                <th>Index Number</th>
-                                <th>Name</th>
-                                <th>Gender</th>
-                                <th>Program</th>
+                                <th>School</th>
+                                <th>Program Name</th>
+                                <th>Program Code</th>
+                                <th></th>
                             </tr>
                             </thead>
                             <tbody>
-                            @foreach($students as $student)
+                            @foreach($programs as $program)
                             <tr>
                                 <td>{{$loop->iteration}}</td>
-                                <td>{{$student->indexNumber}}</td>
-                                <td>{{$student->name}}</td>
-                                <td>{{$student->gender}}</td>
-                                <td>{{$student->program}}</td>
+                                <td>{{$program->school}}</td>
+                                <td>{{$program->program_name}}</td>
+                                <td>{{$program->program_code}}</td>
+                                <td></td>
                             </tr>
                             @endforeach
                             </tbody>
 
                         </table>
-                        <div class="mt-2">
-                            {{ $students->links() }}
                         </div>
                     </div>
                 </div>
@@ -47,3 +49,4 @@
         </div>
     </div>
 @endsection
+

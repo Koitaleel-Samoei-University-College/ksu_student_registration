@@ -11,4 +11,10 @@ class AdmissionYearService
         return Carbon::now()->format('Y');
     }
 
+    public function generateAdmission($indexNumber): string
+    {
+        //1. Query the students table and get student info(Program)
+        return $indexNumber;
+    }
+
 }

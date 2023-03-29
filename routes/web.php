@@ -27,3 +27,5 @@ Route::post('file-import', [KuccpsUploadController::class, 'fileImport'])->name(
 Route::get('file-import', [KuccpsUploadController::class, 'index'])->name('file-import');
 
 Route::get('/students', [StudentListController::class, 'index'])->name('students');
+
+

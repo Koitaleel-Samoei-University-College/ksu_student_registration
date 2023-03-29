@@ -6,7 +6,7 @@
             @include('layouts.sidebar')
             <div class="col-md-9">
                 <div class="card">
-                    <div class="card-header">{{ __('Dashboard') }}</div>
+                    <div class="card-header">{{ __('Program') }}</div>
 
                     <div class="card-body">
                         @if (session('status'))
@@ -14,7 +14,7 @@
                                 {{ session('status') }}
                             </div>
                         @endif
-                        <div class="mt-3 mb-3">
+                        <div class="mt-2 mb-3">
                         <a href="{{route('programs.create')}}" class="btn btn-primary btn-sm">Add Program</a>
                         </div>
 
@@ -23,7 +23,7 @@
                             <thead>
                             <tr>
                                 <th>#</th>
-                                <th>School</th>
+                                <th>School Name</th>
                                 <th>Program Name</th>
                                 <th>Program Code</th>
                                 <th></th>
@@ -33,7 +33,7 @@
                             @foreach($programs as $program)
                             <tr>
                                 <td>{{$loop->iteration}}</td>
-                                <td>{{$program->school}}</td>
+                                <td>{{$program->school_name}}</td>
                                 <td>{{$program->program_name}}</td>
                                 <td>{{$program->program_code}}</td>
                                 <td></td>

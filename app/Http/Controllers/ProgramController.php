@@ -6,6 +6,7 @@ use App\Models\Program;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 
 class ProgramController extends Controller
@@ -24,22 +25,28 @@ class ProgramController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @return Response
+     * @return Factory|View|Application
      */
-    public function create()
+    public function create(): Factory|View|Application
     {
-        //
+        return view('program.create');
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return Response
+     * @param Request $request
+     * @return RedirectResponse
      */
-    public function store(Request $request)
+    public function store(Request $request): RedirectResponse
     {
-        //
+        $request->validate([
+            'school_name' => 'required',
+            'program_name' => 'required|unique:programs',
+            'program_code' => 'required|unique:programs',
+        ]);
+        Program::create($request->all());
+        return redirect()->route('programs.index')->with('success', 'Program Added Successfully');
     }
 
     /**
@@ -67,7 +74,7 @@ class ProgramController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param Request $request
      * @param  int  $id
      * @return Response
      */

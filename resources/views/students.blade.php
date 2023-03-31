@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row justify-content-center">
             @include('layouts.sidebar')
-            <div class="col-md-8">
+            <div class="col-md-11">
                 <div class="card">
                     <div class="card-header"><i class="bi bi-people"></i> {{ __('Students List') }}</div>
 

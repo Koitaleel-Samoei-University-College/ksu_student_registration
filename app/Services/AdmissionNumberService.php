@@ -3,7 +3,6 @@
 namespace App\Services;
 
 use Carbon\Carbon;
-use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
 
 class AdmissionNumberService
@@ -13,14 +12,18 @@ class AdmissionNumberService
         return Carbon::now()->format('Y');
     }
 
-    public function generateAdmission($indexNumber): string
+    public function generateAdmission($indexNumber): array
     {
-        if($this->getLastAdmissionYear() == $this->getYear()){
+        if($this->getLastAdmissionYear() != 0 and $this->getLastAdmissionYear() == $this->getYear()){
             //get the admission number and increment by one
-            return "Years Match";
+            $number =substr(
+                DB::table('admissions')->get()->last()->admission_number,
+                4,3
+            );
+            return [$this->getProgramCode($indexNumber),intval($number)+1, $this->getYear()];
         } else {
-            // start the admission number
-            return "Years Dont Match";
+            // start the admission number from one (001)
+            return [$this->getProgramCode($indexNumber),"001", $this->getYear()];
         }
 
     }
@@ -43,10 +46,14 @@ class AdmissionNumberService
 
     public function getLastAdmissionYear(): string
     {
-        return substr(
-            DB::table('admissions')->get()->last()->admission_number,
-            -4
-        );
+        $lastYear = DB::table('admissions')->get()->last()->admission_number ?? '';
+        if($lastYear != null) {
+            return substr(
+                $lastYear,
+                -4
+            );
+        }
+        return 0;
     }
 
 }

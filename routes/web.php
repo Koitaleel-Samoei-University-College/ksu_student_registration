@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdmissionLetterController;
 use App\Http\Controllers\KuccpsUploadController;
 use App\Http\Controllers\ProgramController;
 use App\Http\Controllers\StudentListController;
@@ -26,5 +27,7 @@ Auth::routes();
     Route::get('file-import', [KuccpsUploadController::class, 'index'])->name('file-import');
     Route::get('/students', [StudentListController::class, 'index'])->name('students');
     Route::resource('programs', ProgramController::class);
+
+    Route::get('/admission_letter', [AdmissionLetterController::class, 'index'])->name('admission_letter');
 
 

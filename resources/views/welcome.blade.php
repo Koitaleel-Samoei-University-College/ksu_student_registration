@@ -34,6 +34,11 @@
                     <h3 class="flex justify-center">KUCCPS ADMISSION</h3>
                 </div>
 
+                @if (session('error'))
+                    <div class="alert alert-danger" role="alert">
+                        {{ session('error') }}
+                    </div>
+                @endif
 
                 <button class=" btn btn-primary btn-sm mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample"><i class="bi bi-file-earmark-word"></i> How To Instructions</button>
 
@@ -44,7 +49,8 @@
                                     <li class="list-group-item">Test</li>
                                 </ol>
                         </div>
-                        <form >
+                        <form action="{{route('admission_letter')}}">
+                            @csrf
                             <div class="card mt-2">
                                 <div class="card-body">
                                     <div>

@@ -44,23 +44,27 @@
             <br>
             <table style="width: 100%;">
                 <tr>
-                    <td style="text-align: left;"><strong>Your Ref: 27536144003/2021</strong></td>
+                    <td style="text-align: left;"><strong>Your Ref: {{$student_data->indexNumber}}</strong></td>
                     <td style="text-align: right;"><strong>Date:  June 27, 2022</strong></td>
                 </tr>
             </table>
 
         <strong>
-            <p>Our Ref: E35/0148/2022 </p>
-            <div>NDERITU SILVIA MUTHONI </div>
-            <div>P.O.BOX 459 - 20100 </div>
-            <div>NAKURU. </div>
-            <p>27536144003/2020, 27536144003/2020 </p>
-        <p>Dear MS NDERITU,</p>
+            <p>Our Ref: {{$student_data->admission_number}} </p>
+            <div>{{$student_data->name}}</div>
+            <div>P.O.BOX {{strtoupper($student_data->address)}} - {{$student_data->post_code}} </div>
+            <div>{{$student_data->town}}. </div>
+            <p>0{{$student_data->phone}}, 0{{$student_data->alternative_phone}} </p>
+        <p>Dear
+           @if($student_data->gender === 'M') MR @endif
+           @if($student_data->gender === 'F') MS @endif
+            {{strtoupper($surname)}},</p>
         </strong>
 
         <p class="text-decoration-underline"> <strong>ADMISSION INTO THE UNIVERSITY COLLEGE FOR 2022/2023 ACADEMIC YEAR  </strong> </p>
         <p>
-        <p>Following your application for admission to undertake undergraduate studies, I am pleased to inform you that you have been offered admission to <strong>Koitaleel Samoei University College (KSUC) </strong>, in the School of <strong> EDUCATION</strong> for a course leading to the degree of <strong>BACHELOR OF EDUCATION ARTS</strong></p>
+        <p>Following your application for admission to undertake undergraduate studies, I am pleased to inform you that you have been offered admission to <strong>Koitaleel Samoei University College (KSUC) </strong>, in the School of <strong>
+                {{strtoupper($school->school_name)}}</strong> for a course leading to the degree of <strong>{{strtoupper($student_data->program)}}</strong></p>
 
             <p>This offer is made on the basis of the copies of the certificates, which you presented with your application. You should therefore bring with you the originals for verification on the registration day.  Please note that any information found to be untrue/incorrect will automatically lead to your disqualification and expulsion from the College. The College also reserves the right to report you to the relevant government agents for action.</p>
 

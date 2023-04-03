@@ -19,6 +19,9 @@
             display: flex;
             justify-content: center;
         }
+        .page-break {
+            page-break-after: always;
+        }
     </style>
 </head>
 <body>
@@ -76,7 +79,7 @@
                <li>Your execution of the Bond.</li>
                <li>Provide evidence of your registration with the National Hospital Insurance Fund (NHIF).</li>
            </ol>
-
+    <div class="page-break"></div>
         <strong>Fees Payment</strong>
             <p>Fees is payable in full before reporting for registration. All fees shall be paid by direct cash deposit to <strong> ABSA BANK </strong>(formerly Barclays Bank) <strong>ELDORET BRANCH, KENYATTA STREET </strong> or any branch countrywide. ACCOUNT NAME: <strong> KOITALEEL SAMOEI UNIVERSITY COLLEGE </strong>: ACCOUNT NUMBER: <strong>2041283338</strong>. Personal Cheques are not acceptable. A Student shall retain the pay-in bank slips as proof of payment and submit to the College on the day of registration.</p>
 

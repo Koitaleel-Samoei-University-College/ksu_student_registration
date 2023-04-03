@@ -51,7 +51,7 @@
         <p>Dear MS NDERITU,</p>
         </strong>
 
-        <p> <strong><u>ADMISSION INTO THE UNIVERSITY COLLEGE FOR 2022/2023 ACADEMIC YEAR </u> </strong> </p>
+        <p class="text-decoration-underline"> <strong>ADMISSION INTO THE UNIVERSITY COLLEGE FOR 2022/2023 ACADEMIC YEAR  </strong> </p>
         <p>
         <p>Following your application for admission to undertake undergraduate studies, I am pleased to inform you that you have been offered admission to <strong>Koitaleel Samoei University College (KSUC) </strong>, in the School of <strong> EDUCATION</strong> for a course leading to the degree of <strong>BACHELOR OF EDUCATION ARTS</strong></p>
 

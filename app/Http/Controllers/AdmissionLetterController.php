@@ -25,4 +25,9 @@ class AdmissionLetterController extends Controller
 
 //        return $request->admissionNumber;
     }
+
+    public function letter()
+    {
+        return view('admission.letter');
+    }
 }

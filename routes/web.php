@@ -29,5 +29,6 @@ Auth::routes();
     Route::resource('programs', ProgramController::class);
 
     Route::get('/admission_letter', [AdmissionLetterController::class, 'index'])->name('admission_letter');
+    Route::get('/admission_letter_view', [AdmissionLetterController::class, 'letter'])->name('letter');
 
 

@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('admission_number');
             $table->unsignedBigInteger('student_id');
-            $table->boolean('status');
+            $table->boolean('status')->default(false);
             $table->foreign('student_id')->references('id')->on('students');
             $table->timestamps();
         });

@@ -22,10 +22,10 @@ class AdmissionNumberService
                 DB::table('admissions')->get()->last()->admission_number,
                 4,3
             );
-            return [$this->getProgramCode($indexNumber),str_pad(intval($number)+1, $pad_length, $pad_char, STR_PAD_LEFT), $this->getYear()];
+            return [$this->getProgramCode($indexNumber),"/",str_pad(intval($number)+1, $pad_length, $pad_char, STR_PAD_LEFT),"/", $this->getYear()];
         } else {
             // start the admission number from one (001)
-            return [$this->getProgramCode($indexNumber),"0001", $this->getYear()];
+            return [$this->getProgramCode($indexNumber),"/","0001","/",$this->getYear()];
         }
 
     }
@@ -35,14 +35,14 @@ class AdmissionNumberService
         $student_program = DB::table('students')
             ->select('program')
             ->where('indexNumber', '=', $indexNumber)
-            ->get();
+            ->first();
         //get program_code
         $school_program = DB::table('programs')
             ->select('program_code')
-            ->where('program_name', '=' , $student_program[0]->program)
-            ->get();
+            ->where('program_name', '=' , $student_program->program)
+            ->first();
 
-        return $school_program[0]->program_code;
+        return $school_program->program_code;
     }
 
 

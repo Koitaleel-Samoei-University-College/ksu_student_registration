@@ -37,46 +37,47 @@
 
         <p> <strong><u>ADMISSION INTO THE UNIVERSITY COLLEGE FOR 2022/2023 ACADEMIC YEAR </u> </strong> </p>
         <p>
-            Following your application for admission to undertake undergraduate studies, I am pleased to inform you that you have been offered admission to Koitaleel Samoei University College (KSUC), in the School of ÈDUCATION for a course leading to the degree of BACHELOR OF EDUCATION ARTS
+        <p>Following your application for admission to undertake undergraduate studies, I am pleased to inform you that you have been offered admission to <strong>Koitaleel Samoei University College (KSUC) </strong>, in the School of <strong> EDUCATION</strong> for a course leading to the degree of <strong>BACHELOR OF EDUCATION ARTS</strong></p>
 
-            This offer is made on the basis of the copies of the certificates, which you presented with your application. You should therefore bring with you the originals for verification on the registration day.  Please note that any information found to be untrue/incorrect will automatically lead to your disqualification and expulsion from the College. The College also reserves the right to report you to the relevant government agents for action.
+            <p>This offer is made on the basis of the copies of the certificates, which you presented with your application. You should therefore bring with you the originals for verification on the registration day.  Please note that any information found to be untrue/incorrect will automatically lead to your disqualification and expulsion from the College. The College also reserves the right to report you to the relevant government agents for action.</p>
 
-            You will be required to do self-online registration from September 5, 2022 and physically report on Monday September 19, 2022 between 8.00 a.m. to 5.00 p.m.
+            <p>You will be required to do self-online registration from <strong>September 5, 2022 </strong>and physically report on <strong> Monday September 19, 2022 </strong>between 8.00 a.m. to 5.00 p.m.</p>
 
-            The offer is also subject to your acceptance of the following conditions:
-            To adhere to Covid-19 Precautions at all times.
-            To adhere to the College Rules and Regulations.
-            To pay the required tuition fees and other expenses as detailed in the Joining Instructions Form JI/6A.
-            To use the Library facilities responsibly and purchase all the textbooks and other materials prescribed for the course units in which you are enrolled.
-            To strictly abide by the rules and regulations given by the Catering and Accommodation Services (CAS) as detailed in Form J1/7A and JI/7B, if you choose to stay in the College accommodation.
-            To provide original certificates and certified copies for verification.
+            <p>The offer is also subject to your acceptance of the following conditions:</p>
 
-            Identify yourself by producing your original National ID Card/passport/ Birth certificate
-            Your execution of the Bond.
-            Provide evidence of your registration with the National Hospital Insurance Fund (NHIF).
+           <ol>
+               <li>To adhere to Covid-19 Precautions at all times.</li>
+               <li>To adhere to the College Rules and Regulations.</li>
+               <li>To pay the required tuition fees and other expenses as detailed in the Joining Instructions Form JI/6A.</li>
+               <li>To use the Library facilities responsibly and purchase all the textbooks and other materials prescribed for the course units in which you are enrolled.</li>
+               <li> To strictly abide by the rules and regulations given by the Catering and Accommodation Services (CAS) as detailed in Form J1/7A and JI/7B, if you choose to stay in the College accommodation.</li>
+               <li>To provide original certificates and certified copies for verification.</li>
+               <li>Identify yourself by producing your original National ID Card/passport/ Birth certificate</li>
+               <li>Your execution of the Bond.</li>
+               <li>Provide evidence of your registration with the National Hospital Insurance Fund (NHIF).</li>
+           </ol>
 
+        <strong>Fees Payment</strong>
+            <p>Fees is payable in full before reporting for registration. All fees shall be paid by direct cash deposit to <strong> ABSA BANK </strong>(formerly Barclays Bank) <strong>ELDORET BRANCH, KENYATTA STREET </strong> or any branch countrywide. ACCOUNT NAME: <strong> KOITALEEL SAMOEI UNIVERSITY COLLEGE </strong>: ACCOUNT NUMBER: <strong>2041283338</strong>. Personal Cheques are not acceptable. A Student shall retain the pay-in bank slips as proof of payment and submit to the College on the day of registration.</p>
 
-            Fees Payment
-            Fees is payable in full before reporting for registration. All fees shall be paid by direct cash deposit to ABSA BANK (formerly Barclays Bank) ELDORET BRANCH, KENYATTA STREET or any branch countrywide. ACCOUNT NAME: KOITALEEL SAMOEI UNIVERSITY COLLEGE: ACCOUNT NUMBER: 2041283338.Personal Cheques are not acceptable. A Student shall retain the pay-in bank slips as proof of payment and submit to the College on the day of registration.
+            <p> Please note that admission to the College does not guarantee you admission in the Halls of Residence. You will, therefore be required to make your private accommodation arrangements should you not be offered College accommodation.</p>
 
-            Please note that admission to the College does not guarantee you admission in the Halls of Residence. You will, therefore be required to make your private accommodation arrangements should you not be offered College accommodation.
+            <p> If you accept this offer on these conditions, please sign acceptance letter JI/1A and return it to the Academic Registrar on the day of registration.  Should you find yourself unable to accept this offer, please complete form JI/1B of the Joining Instructions and email it to the Academic Registrar immediately. </p>
 
-            If you accept this offer on these conditions, please sign acceptance letter JI/1A and return it to the Academic Registrar on the day of registration.  Should you find yourself unable to accept this offer, please complete form JI/1B of the Joining Instructions and email it to the Academic Registrar immediately.
+            <p> The Covid-19 pandemic has led to the University adopting blended Teaching and Learning and therefore all students are requested to carry along a laptop with a Webcam.</p>
 
-            The Covid-19 pandemic has led to the University adopting blended Teaching and Learning and therefore all students are requested to carry along a laptop with a Webcam.
+        <p> You will obtain Joining Instructions and the Bond for your information and necessary action on the following link https://ksu.ac.ke/sites/default/files/Joining%20Instructions-%202021.2022.pdf. The Joining Instructions duly executed should be returned to the College along with the Acceptance Form on the Reporting day, <strong> Monday September 19, 2022.</strong> You are further advised to check regularly on your email and University Website for further guidance.</p>
 
-            You will obtain Joining Instructions and the Bond for your information and necessary action on the following link https://ksu.ac.ke/sites/default/files/Joining%20Instructions-%202021.2022.pdf. The Joining Instructions duly executed should be returned to the College along with the Acceptance Form on the Reporting day, Monday September 19, 2022. You are further advised to check regularly on your email and University Website for further guidance.
+            <p> I take this opportunity to congratulate you on this achievement, and look forward to welcoming you to Koitaleel Samoei University College.</p>
 
-            I take this opportunity to congratulate you on this achievement, and look forward to welcoming you to Koitaleel Samoei University College.
+            <p>Yours sincerely,?</p>
 
-            Yours sincerely,
-
-            sign
-
-            CS JOHN NGIGI
-            ACADEMIC REGISTRAR (AG)
-
-            Encls.
+        <p> sign </p>
+        <strong>
+        <div>CS JOHN NGIGI </div>
+        <div>ACADEMIC REGISTRAR (AG) </div>
+        </strong>
+            <p>Encls.</p>
 
         </p>
     </div>

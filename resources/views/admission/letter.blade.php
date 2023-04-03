@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+{{--<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">--}}
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -14,33 +14,37 @@
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <!-- Scripts -->
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    <style>
+        div.center {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
 </head>
 <body>
 
-            <img class="rounded mx-auto d-block" src="{{asset('logo.png')}}" width="100" height="100">
+            <center ><img src="logo.png" width="100" height="100">
             <strong>
-               <div class="row justify-content-center"> KOITALEEL SAMOEI UNIVERSITY COLLEGE</div>
-               <div class="row justify-content-center"> (A Constituent College of the University of Nairobi)</div>
-               <div class="row justify-content-center"> OFFICE OF THE ACADEMIC REGISTRAR</div>
+               <div class="center"  > KOITALEEL SAMOEI UNIVERSITY COLLEGE</div>
+               <div class="center" > (A Constituent College of the University of Nairobi)</div>
+               <div class="center" > OFFICE OF THE ACADEMIC REGISTRAR</div>
             </strong>
-
-        <p>
-        <strong>
+            </center>
+            <p>
             <div>P.O. Box 5 - 30307,</div>
             <div>MOSORIOT, KENYA</div>
             <div>TELEPHONE: 0740 183 955/ 020-4915316/ 020-4915307</div>
             <div>Email:admission@ksu.ac.ke / regacademic@ksu.ac.ke</div>
             <div>Website: www.ksu.ac.ke</div>
-        </strong>
-        </p>
-        <strong>
-        <div class="d-flex justify-content-between">
-            <div >Your Ref: 27536144003/2021</div>
-            <div >Date:  June 27, 2022</div>
-        </div>
-        </strong>
+            </p>
+
+            <br>
+            <table style="width: 100%;">
+                <tr>
+                    <td style="text-align: left;"><strong>Your Ref: 27536144003/2021</strong></td>
+                    <td style="text-align: right;"><strong>Date:  June 27, 2022</strong></td>
+                </tr>
+            </table>
 
         <strong>
             <p>Our Ref: E35/0148/2022 </p>
@@ -86,7 +90,7 @@
 
             <p> I take this opportunity to congratulate you on this achievement, and look forward to welcoming you to Koitaleel Samoei University College.</p>
 
-            <p>Yours sincerely,?</p>
+            <p>Yours sincerely,</p>
 
         <p> sign </p>
         <strong>

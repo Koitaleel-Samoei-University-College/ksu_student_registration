@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Admission;
 use App\Services\AdmissionNumberService;
+use Barryvdh\DomPDF\Facade\Pdf;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -28,6 +29,10 @@ class AdmissionLetterController extends Controller
 
     public function letter()
     {
-        return view('admission.letter');
+        $data = ["data"];
+        // share data to view
+        $pdf = PDF::loadView('admission.letter', $data);
+        // download PDF file with download method
+        return $pdf->download('KSUC_AdmissionLetter.pdf');
     }
 }

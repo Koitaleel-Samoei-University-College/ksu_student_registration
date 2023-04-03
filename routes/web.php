@@ -28,7 +28,8 @@ Auth::routes();
     Route::get('/students', [StudentListController::class, 'index'])->name('students');
     Route::resource('programs', ProgramController::class);
 
-    Route::get('/admission_letter', [AdmissionLetterController::class, 'index'])->name('admission_letter');
-    Route::get('/admission_letter_view', [AdmissionLetterController::class, 'letter'])->name('letter');
+    Route::get('/admission_letters', [AdmissionLetterController::class, 'index'])->name('admission_letters');
+    Route::get('/admission_letter', [AdmissionLetterController::class, 'create'])->name('admission_letter');
+    Route::get('/admission_letter_download/{student_id}', [AdmissionLetterController::class, 'letter'])->name('letter_download');
 
 

@@ -6,6 +6,8 @@ use App\Models\Admission;
 use App\Services\AdmissionNumberService;
 use Barryvdh\DomPDF\Facade\Pdf;
 use Illuminate\Contracts\Foundation\Application;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -14,7 +16,15 @@ use Illuminate\Support\Facades\DB;
 
 class AdmissionLetterController extends Controller
 {
-    public function index(Request $request, AdmissionNumberService $admissionNumberService): Response|Redirector|RedirectResponse|Application
+    public function index(): Factory|View|Application
+    {
+        $admissions = DB::table('admissions')
+            ->join('students', 'admissions.student_id', '=', 'students.id')
+            ->select('admissions.student_id','admissions.admission_number', 'students.name', 'students.indexNumber')
+            ->paginate(20);
+        return view('admission.index', compact('admissions'));
+    }
+    public function create(Request $request, AdmissionNumberService $admissionNumberService): Response|Redirector|RedirectResponse|Application
     {
         //Validate Entered Adm Number
         if(!DB::table('students')->where('indexNumber',  $request['admissionNumber'])->exists()) {

@@ -18,13 +18,13 @@ class AdmissionLetterController extends Controller
             return redirect('/')->with('error', "The Admission Number Doesn't Exits");
         }
 
-       dd($admissionNumberService->generateAdmission($request->admissionNumber));
+//       dd($admissionNumberService->generateAdmission($request->admissionNumber));
 
         //get the lastinsertedID and check the year and increment by 1
         // insert the details to admissions table
         // generate the admission letter and download
 
-//        return $request->admissionNumber;
+        return $this->letter();
     }
 
     public function letter()

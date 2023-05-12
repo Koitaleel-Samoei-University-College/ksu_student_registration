@@ -4,6 +4,7 @@ use App\Http\Controllers\AdmissionLetterController;
 use App\Http\Controllers\KuccpsUploadController;
 use App\Http\Controllers\ProgramController;
 use App\Http\Controllers\StudentListController;
+use App\Services\AdmissionNumberService;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -31,5 +32,9 @@ Auth::routes();
     Route::get('/admission_letters', [AdmissionLetterController::class, 'index'])->name('admission_letters');
     Route::get('/admission_letter', [AdmissionLetterController::class, 'create'])->name('admission_letter');
     Route::get('/admission_letter_download/{student_id}', [AdmissionLetterController::class, 'letter'])->name('letter_download');
+
+//    Route::get('/generator', function (AdmissionNumberService $admissionNumberService) {
+//        return $admissionNumberService->numbers_generator();
+//    });
 
 

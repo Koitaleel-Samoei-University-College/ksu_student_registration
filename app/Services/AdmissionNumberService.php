@@ -2,8 +2,11 @@
 
 namespace App\Services;
 
+use App\Models\Admission;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
+use JetBrains\PhpStorm\NoReturn;
+use function MongoDB\BSON\toJSON;
 
 class AdmissionNumberService
 {
@@ -28,6 +31,38 @@ class AdmissionNumberService
             // start the admission number from one (001)
             return [$this->getProgramCode($indexNumber),"/","0001","/",$this->getYear()];
         }
+
+    }
+
+     public function numbers_generator(): void
+     {
+
+        $programs = [
+            "BACHELOR OF COMMERCE",
+            "BACHELOR OF EDUCATION (ARTS)",
+            "BACHELOR OF EDUCATION (EARLY CHILDHOOD EDUCATION)"
+        ];
+        foreach ($programs as $program){
+            $results[] = DB::table('students')
+                ->where('program', '=', $program)
+                ->select('id','indexNumber')
+                ->get();
+
+        }
+
+         for ($i = 0; $i < count($results); $i++) {
+             for ($j = 0; $j < count($results[$i]); $j++) {
+                 $student_id = object_get($results[$i][$j], 'id');
+                $Admission =  implode("",$this->generateAdmission(object_get($results[$i][$j], 'indexNumber')));
+
+                 //save to database
+                 $admissions = new Admission();
+                 $admissions->student_id = $student_id;
+                 $admissions->admission_number = $Admission;
+                 $admissions->status = true;
+                 $admissions->save();
+             }
+         }
 
     }
 
@@ -58,5 +93,7 @@ class AdmissionNumberService
         }
         return 0;
     }
+
+
 
 }

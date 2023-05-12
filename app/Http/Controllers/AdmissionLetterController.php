@@ -90,6 +90,6 @@ class AdmissionLetterController extends Controller
         // share data to view
         $pdf = PDF::loadView('admission.letter', $data);
         // download PDF file with download method
-        return $pdf->download('KSUC_AdmissionLetter.pdf');
+        return $pdf->download($student_data->admission_number.'.pdf');
     }
 }

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Imports\StudentImport;
+use App\Services\AdmissionNumberService;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
@@ -23,14 +24,14 @@ class KuccpsUploadController extends Controller
     /**
      * @return RedirectResponse
      */
-    public function fileImport(Request $request): RedirectResponse
+    public function fileImport(Request $request,AdmissionNumberService $admissionNumberService): RedirectResponse
     {
         $request->validate([
             'file' => 'required'
         ]);
         try{
-            Excel::import(new StudentImport, $request->file('file')->store('temp'));
-            return redirect('/students');
+          Excel::import(new StudentImport, $request->file('file')->store('temp'));
+          return redirect('/students');
         } catch (\Throwable $e){
 //            dd($e->getMessage());
             return back()->withException($e);

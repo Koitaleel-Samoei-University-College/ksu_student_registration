@@ -65,6 +65,35 @@ class AdmissionNumberService
          }
 
     }
+    
+    // Optimized Code
+//     public function numbers_generator(): void
+// {
+//     $programs = [
+//         "BACHELOR OF COMMERCE",
+//         "BACHELOR OF EDUCATION (ARTS)",
+//         "BACHELOR OF EDUCATION (EARLY CHILDHOOD EDUCATION)"
+//     ];
+
+//     // Get all students from all programs
+//     $students = DB::table('students')
+//         ->whereIn('program', $programs)
+//         ->select('id', 'indexNumber')
+//         ->get();
+
+//     // Iterate through the students and generate admission numbers
+//     foreach ($students as $student) {
+//         $admissionNumber = $this->generateAdmission($student->indexNumber);
+
+//         // Save the admission number to the database
+//         $admission = new Admission();
+//         $admission->student_id = $student->id;
+//         $admission->admission_number = $admissionNumber;
+//         $admission->status = true;
+//         $admission->save();
+//     }
+// }
+
 
     public function getProgramCode($indexNumber)
     {

@@ -10,8 +10,7 @@ class AdmissionNumberService
 {
     public function getYear(): string
     {
-//        return Carbon::now()->format('Y');
-        return "2022";
+        return Carbon::now()->format('Y');
     }
 
     public function generateAdmission($indexNumber): array

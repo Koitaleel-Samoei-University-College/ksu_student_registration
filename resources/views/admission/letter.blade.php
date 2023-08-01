@@ -68,7 +68,7 @@
 
             <p>This offer is made on the basis of the copies of the certificates, which you presented with your application. You should therefore bring with you the originals for verification on the registration day.  Please note that any information found to be untrue/incorrect will automatically lead to your disqualification and expulsion from the College. The College also reserves the right to report you to the relevant government agents for action.</p>
 
-            <p>You will be required to do self-online registration from <strong>September 5, 2022 </strong>and physically report on <strong> Monday September 19, 2022 </strong>between 8.00 a.m. to 5.00 p.m.</p>
+            <p>You will be required to do self-online registration from <strong>September 5, 2023 </strong>and physically report on <strong> Monday September 25, 2023 </strong>between 8.00 a.m. to 5.00 p.m.</p>
 
             <p>The offer is also subject to your acceptance of the following conditions:</p>
 

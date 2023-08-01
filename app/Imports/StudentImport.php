@@ -31,8 +31,7 @@ class StudentImport implements ToModel, WithStartRow, WithValidation
         'post_code'=> $row[9],
         'town'=> $row[10],
         'program_code'=> $row[11],
-        'program'=> $row[12],
-        'secondary_school'=> $row[13]
+        'program'=> $row[12]
         ]);
     }
 

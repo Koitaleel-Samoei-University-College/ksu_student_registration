@@ -30,7 +30,7 @@ class AdmissionLetterController extends Controller
     {
         //Validate Entered Adm Number
         if(!DB::table('students')->where('indexNumber',  $request['admissionNumber'])->exists()) {
-            return redirect('/')->with('error', "The Admission Number Doesn't Exits");
+            return redirect('/')->with('error', "The Index Number Doesn't Exits");
         }
         //get student ID
         $student_id = DB::table('students')
@@ -47,20 +47,21 @@ class AdmissionLetterController extends Controller
             $downloadCounterService->add_download_count($student_id->id, $request->ip());
             return $this->letter($student_id->id);
         }
-        //generate the admission number and save to the admissions table
-       $generatedAdmission = implode("",$admissionNumberService->generateAdmission($request['admissionNumber']));
-
-//        //save to database
-        $admissions = new Admission();
-        $admissions->student_id = $student_id->id;
-        $admissions->admission_number = $generatedAdmission;
-        $admissions->status = true;
-        $admissions->save();
-
-        $downloadCounterService->add_download_count($student_id->id, $request->ip());
+//        //generate the admission number and save to the admissions table
+//       $generatedAdmission = implode("",$admissionNumberService->generateAdmission($request['admissionNumber']));
 //
-//        //generate letter and download
-        return $this->letter($student_id->id);
+////        //save to database
+//        $admissions = new Admission();
+//        $admissions->student_id = $student_id->id;
+//        $admissions->admission_number = $generatedAdmission;
+//        $admissions->status = true;
+//        $admissions->save();
+//
+//        $downloadCounterService->add_download_count($student_id->id, $request->ip());
+////
+////        //generate letter and download
+//        return $this->letter($student_id->id);
+        return redirect('/')->with('error', "The Index Number Doesn't Exits");
     }
 
     public function letter($student_id): Response

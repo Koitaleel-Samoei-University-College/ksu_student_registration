@@ -45,7 +45,7 @@
             <table style="width: 100%;">
                 <tr>
                     <td style="text-align: left;"><strong>Your Ref: {{$student_data->indexNumber}}</strong></td>
-                    <td style="text-align: right;"><strong>Date:  August 2, 2023</strong></td>
+                    <td style="text-align: right;"><strong>Date:  August 1, 2023</strong></td>
                 </tr>
             </table>
 
@@ -68,10 +68,8 @@
 
             <p>This offer is made on the basis of the copies of the certificates, which you presented with your application. You should therefore bring with you the originals for verification on the registration day.  Please note that any information found to be untrue/incorrect will automatically lead to your disqualification and expulsion from the College. The College also reserves the right to report you to the relevant government agents for action.</p>
 
-            <p>You will be required to do self-online registration from <strong>September 5, 2023 </strong>and physically report on <strong> Monday September 25, 2023 </strong>between 8.00 a.m. to 5.00 p.m.</p>
-
+            <p>You will be required to report physically on <strong> Monday September 25, 2023 </strong> between 8.00 a.m. to 5.00 p.m.</p>
             <p>The offer is also subject to your acceptance of the following conditions:</p>
-
            <ol>
                <li>To adhere to Covid-19 Precautions at all times.</li>
                <li>To adhere to the College Rules and Regulations.</li>
@@ -85,18 +83,29 @@
            </ol>
     <div class="page-break"></div>
         <strong>Fees Payment</strong>
-            <p>Fees is payable in full before reporting for registration. All fees shall be paid by direct cash deposit to <strong> ABSA BANK </strong>(formerly Barclays Bank) <strong>ELDORET BRANCH, KENYATTA STREET </strong> or any branch countrywide. ACCOUNT NAME: <strong> KOITALEEL SAMOEI UNIVERSITY COLLEGE </strong>: ACCOUNT NUMBER: <strong>2041283338</strong>. Personal Cheques are not acceptable. A Student shall retain the pay-in bank slips as proof of payment and submit to the College on the day of registration.</p>
+           <p> Following your placement in this institution, you are eligible to apply for a Government scholarship, loan and
+            bursary to assist you with your educational expenses. If you require government financial support, you
+               <strong>MUST </strong> make an application for consideration through the official scholarship and loan application portal
+           <span style="color: blue">https//www.hef.co.ke/</span>  should the Government scholarship, loan and bursary not be sufficient to cover the
+               entire cost of your programme, the remaining fee balance will be the responsibility of your parent/guardian. </p>
 
+           <p> Fees is payable in full, before reporting for registration. All fees shall be paid by direct cash deposit to <strong>ABSA
+                   BANK </strong>(formerly Barclays Bank)<strong> ELDORET BRANCH, KENYATTA STREET or any branch
+            countrywide</strong>. ACCOUNT NAME: <strong> KOITALEEL SAMOEI UNIVERSITY COLLEGE: ACCOUNT
+            NUMBER: 2041283338 </strong>.Personal Cheques are not acceptable. A Student shall retain the pay in bank slips as
+               proof of payment and submit to the College on the day of registration. </p>
             <p> Please note that admission to the College does not guarantee you admission in the Halls of Residence. You will, therefore be required to make your private accommodation arrangements should you not be offered College accommodation.</p>
 
             <p> If you accept this offer on these conditions, please sign acceptance letter JI/1A and return it to the Academic Registrar on the day of registration.  Should you find yourself unable to accept this offer, please complete form JI/1B of the Joining Instructions and email it to the Academic Registrar immediately. </p>
 
             <p> The Covid-19 pandemic has led to the University adopting blended Teaching and Learning and therefore all students are requested to carry along a laptop with a Webcam.</p>
 
-        <p> You will obtain Joining Instructions and the Bond for your information and necessary action on the following link https://ksu.ac.ke/sites/default/files/Joining%20Instructions-%202021.2022.pdf. The Joining Instructions duly executed should be returned to the College along with the Acceptance Form on the Reporting day, <strong> Monday September 19, 2022.</strong> You are further advised to check regularly on your email and University Website for further guidance.</p>
-
-            <p> I take this opportunity to congratulate you on this achievement, and look forward to welcoming you to Koitaleel Samoei University College.</p>
-
+           <p> You will obtain Joining Instructions and the Bond for your information and necessary action on the following
+               link   <span style="color: blue"> https://ksu.ac.ke/ </span> Joining Instructions duly executed should be returned to the College along with the
+            Acceptance Form on Monday, September 25, 2023 the day of Reporting. You are further advised to check
+               regularly on your email and University Website for further guidance. </p>
+           <p> I take this opportunity to congratulate you on this achievement, and look forward to welcoming you to Koitaleel
+               Samoei University College.</p>
             <p>Yours sincerely,</p>
 
         <p> sign </p>

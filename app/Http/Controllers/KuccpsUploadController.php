@@ -35,7 +35,8 @@ class KuccpsUploadController extends Controller
           $admissionNumberService->numbers_generator();
           return redirect('/students');
         } catch (\Throwable $e){
-            return back('/students')->withException($e);
+//            return redirect('/student', 302);
+            dd($e);
         }
 
     }

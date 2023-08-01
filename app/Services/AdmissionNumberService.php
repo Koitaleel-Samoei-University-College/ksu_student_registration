@@ -38,9 +38,11 @@ class AdmissionNumberService
      {
 
         $programs = [
+            "BACHELOR OF ARTS",
             "BACHELOR OF COMMERCE",
             "BACHELOR OF EDUCATION (ARTS)",
-            "BACHELOR OF EDUCATION (EARLY CHILDHOOD EDUCATION)"
+            "BACHELOR OF EDUCATION (EARLY CHILDHOOD EDUCATION)",
+            "BACHELOR OF PROJECT PLANNING AND MANAGEMENT"
         ];
         foreach ($programs as $program){
             $results[] = DB::table('students')

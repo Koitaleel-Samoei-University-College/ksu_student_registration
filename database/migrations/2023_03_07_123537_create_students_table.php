@@ -27,7 +27,7 @@ return new class extends Migration
             $table->string('town')->nullable();
             $table->string('program_code');
             $table->string('program');
-            $table->string('secondary_school');
+            $table->string('secondary_school')->nullable();
             $table->timestamps();
         });
     }

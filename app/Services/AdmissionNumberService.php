@@ -5,8 +5,6 @@ namespace App\Services;
 use App\Models\Admission;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
-use JetBrains\PhpStorm\NoReturn;
-use function MongoDB\BSON\toJSON;
 
 class AdmissionNumberService
 {
@@ -67,7 +65,7 @@ class AdmissionNumberService
          }
 
     }
-    
+
     // Optimized Code
 //     public function numbers_generator(): void
 // {

@@ -31,9 +31,9 @@ class KuccpsUploadController extends Controller
         ]);
         try{
           Excel::import(new StudentImport, $request->file('file')->store('temp'));
+          $admissionNumberService->numbers_generator();
           return redirect('/students');
         } catch (\Throwable $e){
-//            dd($e->getMessage());
             return back()->withException($e);
         }
 

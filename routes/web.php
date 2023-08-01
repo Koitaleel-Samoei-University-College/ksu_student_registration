@@ -36,10 +36,11 @@ Route::group(['auth'], function (){
     Route::get('/admission_letter', [AdmissionLetterController::class, 'create'])->name('admission_letter');
     Route::get('/admission_letter_download/{student_id}', [AdmissionLetterController::class, 'letter'])->name('letter_download');
 
-    Route::get('/generator', function (AdmissionNumberService $admissionNumberService) {
-        return $admissionNumberService->numbers_generator();
-    });
-    Route::get('/download-excel', [ExportAdmissionNumberController::class, 'index']);
+    //used to generate the admission numbers
+//    Route::get('/generator', function (AdmissionNumberService $admissionNumberService) {
+//        return $admissionNumberService->numbers_generator();
+//    });
+    Route::get('/download-excel', [ExportAdmissionNumberController::class, 'index'])->name('download_admission_list');
 });
 
 

@@ -5,6 +5,9 @@
         <div class="row justify-content-center">
             @include('layouts.sidebar')
             <div class="col-md-9">
+                <div class="d-grid mb-3 d-md-flex justify-content-md-end">
+                    <a href="{{route('download_admission_list')}}" class="btn btn-success btn-sm" type="button"> <i class="bi bi-file-earmark-excel"></i> Download Admission List</a>
+                </div>
                 <div class="card">
                     <div class="card-header"><i class="bi bi-people"></i> {{ __('Students List') }}</div>
 

@@ -102,7 +102,7 @@
 
            <p> You will obtain Joining Instructions and the Bond for your information and necessary action on the following
                link   <span style="color: blue"> https://ksu.ac.ke/ </span> Joining Instructions duly executed should be returned to the College along with the
-            Acceptance Form on Monday, September 25, 2023 the day of Reporting. You are further advised to check
+            Acceptance Form on <strong>Monday, September 25, 2023</strong> the day of Reporting. You are further advised to check
                regularly on your email and University Website for further guidance. </p>
            <p> I take this opportunity to congratulate you on this achievement, and look forward to welcoming you to Koitaleel
                Samoei University College.</p>

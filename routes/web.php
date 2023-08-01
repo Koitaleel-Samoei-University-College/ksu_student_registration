@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdmissionLetterController;
+use App\Http\Controllers\ExportAdmissionNumberController;
 use App\Http\Controllers\KuccpsUploadController;
 use App\Http\Controllers\ProgramController;
 use App\Http\Controllers\StudentListController;
@@ -23,6 +24,8 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+
+Route::group(['auth'], function (){
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::post('file-import', [KuccpsUploadController::class, 'fileImport'])->name('file-import');
     Route::get('file-import', [KuccpsUploadController::class, 'index'])->name('file-import');
@@ -36,5 +39,7 @@ Auth::routes();
     Route::get('/generator', function (AdmissionNumberService $admissionNumberService) {
         return $admissionNumberService->numbers_generator();
     });
+    Route::get('/download-excel', [ExportAdmissionNumberController::class, 'index']);
+});
 
 

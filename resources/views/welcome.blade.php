@@ -40,13 +40,13 @@
                     </div>
                 @endif
 
-                <button class=" btn btn-primary btn-sm mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample"><i class="bi bi-file-earmark-word"></i> How To Instructions</button>
+                <button class=" btn btn-primary btn-sm mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample"><i class="bi bi-file-earmark-word"></i> Instructions</button>
 
                         <div class="collapse" id="collapseWidthExample">
                                 <ol class="mt2 mb-2 list-group list-group-numbered">
-                                    <li class="list-group-item">Test</li>
-                                    <li class="list-group-item">Test</li>
-                                    <li class="list-group-item">Test</li>
+                                    <li class="list-group-item">To Download your Admission Letter, Enter your KCSE Index Number Below. <i>The format is <b>03106106092/2022</b></i> </li>
+                                    <li class="list-group-item"> Then Click the green Button "Download Admission Letter" to download your letter.</li>
+{{--                                    <li class="list-group-item">For instruction on the Admission and Join Process Click on the Maroon Button </li>--}}
                                 </ol>
                         </div>
                         <form action="{{route('admission_letter')}}">
@@ -54,8 +54,8 @@
                             <div class="card mt-2">
                                 <div class="card-body">
                                     <div>
-                                        <label class="form-label"><b>Admission Number</b>  <i>[03106106092/2022]</i> </label>
-                                        <input type="text" class="form-control" name="admissionNumber" required>
+                                        <label class="form-label"><b>KCSE Index Number</b> </label>
+                                        <input type="text" class="form-control" name="admissionNumber" required placeholder="Enter Index Number Here !">
                                     </div>
                                 </div>
                                 <div class="card-footer d-grid gap-2 d-md-flex justify-content-md-end">

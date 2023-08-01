@@ -33,8 +33,8 @@ Auth::routes();
     Route::get('/admission_letter', [AdmissionLetterController::class, 'create'])->name('admission_letter');
     Route::get('/admission_letter_download/{student_id}', [AdmissionLetterController::class, 'letter'])->name('letter_download');
 
-//    Route::get('/generator', function (AdmissionNumberService $admissionNumberService) {
-//        return $admissionNumberService->numbers_generator();
-//    });
+    Route::get('/generator', function (AdmissionNumberService $admissionNumberService) {
+        return $admissionNumberService->numbers_generator();
+    });
 
 

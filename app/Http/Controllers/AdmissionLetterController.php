@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Admission;
+use App\Models\DownloadCount;
 use App\Services\AdmissionNumberService;
+use App\Services\DownloadCounterService;
 use Barryvdh\DomPDF\Facade\Pdf;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
@@ -24,7 +26,7 @@ class AdmissionLetterController extends Controller
             ->paginate(20);
         return view('admission.index', compact('admissions'));
     }
-    public function create(Request $request, AdmissionNumberService $admissionNumberService): Response|Redirector|RedirectResponse|Application
+    public function create(Request $request, AdmissionNumberService $admissionNumberService, DownloadCounterService $downloadCounterService): Response|Redirector|RedirectResponse|Application
     {
         //Validate Entered Adm Number
         if(!DB::table('students')->where('indexNumber',  $request['admissionNumber'])->exists()) {
@@ -42,6 +44,7 @@ class AdmissionLetterController extends Controller
                 ->where('students.indexNumber', '=' ,$request['admissionNumber'])
                 ->exists()
         ){
+            $downloadCounterService->add_download_count($student_id->id, $request->ip());
             return $this->letter($student_id->id);
         }
         //generate the admission number and save to the admissions table
@@ -53,6 +56,8 @@ class AdmissionLetterController extends Controller
         $admissions->admission_number = $generatedAdmission;
         $admissions->status = true;
         $admissions->save();
+
+        $downloadCounterService->add_download_count($student_id->id, $request->ip());
 //
 //        //generate letter and download
         return $this->letter($student_id->id);

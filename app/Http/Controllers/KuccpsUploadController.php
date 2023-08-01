@@ -9,6 +9,7 @@ use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Redirector;
 use Maatwebsite\Excel\Facades\Excel;
 
 class KuccpsUploadController extends Controller
@@ -22,9 +23,9 @@ class KuccpsUploadController extends Controller
     }
 
     /**
-     * @return RedirectResponse
+     * @return Redirector|Application|RedirectResponse
      */
-    public function fileImport(Request $request,AdmissionNumberService $admissionNumberService): RedirectResponse
+    public function fileImport(Request $request,AdmissionNumberService $admissionNumberService): Application|RedirectResponse|Redirector
     {
         $request->validate([
             'file' => 'required'
@@ -34,7 +35,7 @@ class KuccpsUploadController extends Controller
           $admissionNumberService->numbers_generator();
           return redirect('/students');
         } catch (\Throwable $e){
-            return back()->withException($e);
+            return back('/students')->withException($e);
         }
 
     }

@@ -40,7 +40,7 @@
                     </div>
                 @endif
 
-                <button class=" btn btn-primary btn-sm mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample"><i class="bi bi-file-earmark-word"></i>Download Instructions</button>
+                <button class=" btn btn-primary btn-sm mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample"> Download Instructions</button>
 
                         <div class="collapse" id="collapseWidthExample">
                                 <ol class="mt2 mb-2 list-group list-group-numbered">

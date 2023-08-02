@@ -46,7 +46,7 @@
                                 <ol class="mt2 mb-2 list-group list-group-numbered">
                                     <li class="list-group-item">To Download your Admission Letter, Enter your KCSE Index Number Below. <i>The format is <b>03106106092/2022</b></i> </li>
                                     <li class="list-group-item"> Then Click the green Button "Download Admission Letter" to download your letter.</li>
-{{--                                    <li class="list-group-item">For instruction on the Admission and Join Process Click on the Maroon Button </li>--}}
+                                    <li class="list-group-item">For instruction on the Admission and Joining Process Click on the Joining Instructions Button </li>
                                 </ol>
                         </div>
 

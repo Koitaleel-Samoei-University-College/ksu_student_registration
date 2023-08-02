@@ -40,7 +40,7 @@
                     </div>
                 @endif
 
-                <button class=" btn btn-primary btn-sm mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample"><i class="bi bi-file-earmark-word"></i> Instructions</button>
+                <button class=" btn btn-primary btn-sm mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample"><i class="bi bi-file-earmark-word"></i>Download Instructions</button>
 
                         <div class="collapse" id="collapseWidthExample">
                                 <ol class="mt2 mb-2 list-group list-group-numbered">
@@ -49,7 +49,10 @@
 {{--                                    <li class="list-group-item">For instruction on the Admission and Join Process Click on the Maroon Button </li>--}}
                                 </ol>
                         </div>
-                        <form action="{{route('admission_letter')}}">
+
+                <a href="https://drive.google.com/file/d/1pkWq9O2Yfb5X-0X5z49vhyxGDpIyG-hU/view?usp=sharing" class="btn btn-primary btn-sm mt-2 mb-3" ><i class="bi bi-file-earmark-pdf-fill"></i> Joining Instructions</a>
+
+                <form action="{{route('admission_letter')}}">
                             @csrf
                             <div class="card mt-2">
                                 <div class="card-body">
@@ -64,8 +67,6 @@
 
                             </div>
                         </form>
-
-
 
 
             </div>

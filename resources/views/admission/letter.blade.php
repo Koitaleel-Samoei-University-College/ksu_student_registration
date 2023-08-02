@@ -108,10 +108,10 @@
                Samoei University College.</p>
             <p>Yours sincerely,</p>
 
-        <p> sign </p>
+        <img src="https://res.cloudinary.com/homework-support-com/image/upload/v1690964320/RegistraSign_lmc3ul.jpg" width="150" height="120">
         <strong>
         <div>CS JOHN NGIGI </div>
-        <div>ACADEMIC REGISTRAR (AG) </div>
+        <div>DEPUTY REGISTRAR </div>
         </strong>
             <p>Encls.</p>
 

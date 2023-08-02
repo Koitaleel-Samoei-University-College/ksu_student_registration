@@ -20,6 +20,10 @@
             body {
                 font-family: 'Nunito', sans-serif;
             }
+            .joining {
+                background-color: maroon;
+                color: #fff;
+            }
         </style>
     </head>
     <body >
@@ -46,11 +50,11 @@
                                 <ol class="mt2 mb-2 list-group list-group-numbered">
                                     <li class="list-group-item">To Download your Admission Letter, Enter your KCSE Index Number Below. <i>The format is <b>03106106092/2022</b></i> </li>
                                     <li class="list-group-item"> Then Click the green Button "Download Admission Letter" to download your letter.</li>
-                                    <li class="list-group-item">For instruction on the Admission and Joining Process Click on the Joining Instructions Button </li>
+                                    <li class="list-group-item">For instruction on the Admission and Joining Process Click on the "Joining Instructions" Button </li>
                                 </ol>
                         </div>
 
-                <a href="https://drive.google.com/file/d/1pkWq9O2Yfb5X-0X5z49vhyxGDpIyG-hU/view?usp=sharing" class="btn btn-primary btn-sm mt-2 mb-3" ><i class="bi bi-file-earmark-pdf-fill"></i> Joining Instructions</a>
+                <a href="https://drive.google.com/file/d/1pkWq9O2Yfb5X-0X5z49vhyxGDpIyG-hU/view?usp=sharing" class="btn joining btn-sm mt-2 mb-3" ><i class="bi bi-file-earmark-pdf-fill"></i> Joining Instructions</a>
 
                 <form action="{{route('admission_letter')}}">
                             @csrf

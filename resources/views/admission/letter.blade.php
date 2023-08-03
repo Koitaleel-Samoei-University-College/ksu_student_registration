@@ -113,7 +113,7 @@
         <img src="https://res.cloudinary.com/homework-support-com/image/upload/v1690964320/registraSignBk_uf5o6h.png" width="200" height="120">
         <strong>
         <div>CS JOHN NGIGI </div>
-        <div>DEPUTY REGISTRAR </div>
+        <div>DEPUTY REGISTRAR ACADEMIC </div>
         </strong>
             <p>Encls.</p>
 

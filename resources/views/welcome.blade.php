@@ -54,7 +54,7 @@
                                 </ol>
                         </div>
 
-                <a href="https://drive.google.com/file/d/1pkWq9O2Yfb5X-0X5z49vhyxGDpIyG-hU/view?usp=sharing" class="btn joining btn-sm mt-2 mb-3" ><i class="bi bi-file-earmark-pdf-fill"></i> Joining Instructions</a>
+                <a href="https://drive.google.com/file/d/1m57mbUkDs_6BWV_f2xraH12MDviV0QgX/view?usp=sharing" class="btn joining btn-sm mt-2 mb-3" ><i class="bi bi-file-earmark-pdf-fill"></i> Joining Instructions</a>
 
                 <form action="{{route('admission_letter')}}">
                             @csrf

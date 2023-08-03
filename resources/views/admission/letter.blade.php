@@ -26,7 +26,7 @@
 </head>
 <body>
 
-            <center ><img src="logo.png" width="100" height="100">
+            <center ><img src="https://res.cloudinary.com/homework-support-com/image/upload/v1691054617/logo_foxoai.png" width="100" height="100">
             <strong>
                <div class="center"  > KOITALEEL SAMOEI UNIVERSITY COLLEGE</div>
                <div class="center" > (A Constituent College of the University of Nairobi)</div>

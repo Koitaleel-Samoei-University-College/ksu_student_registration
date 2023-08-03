@@ -47,20 +47,6 @@ class AdmissionLetterController extends Controller
             $downloadCounterService->add_download_count($student_id->id, $request->ip());
             return $this->letter($student_id->id);
         }
-//        //generate the admission number and save to the admissions table
-//       $generatedAdmission = implode("",$admissionNumberService->generateAdmission($request['admissionNumber']));
-//
-////        //save to database
-//        $admissions = new Admission();
-//        $admissions->student_id = $student_id->id;
-//        $admissions->admission_number = $generatedAdmission;
-//        $admissions->status = true;
-//        $admissions->save();
-//
-//        $downloadCounterService->add_download_count($student_id->id, $request->ip());
-////
-////        //generate letter and download
-//        return $this->letter($student_id->id);
         return redirect('/')->with('error', "The Index Number Doesn't Exits");
     }
 
@@ -80,6 +66,7 @@ class AdmissionLetterController extends Controller
                 'students.post_code',
                 'students.town',
                 'students.program',
+                'students.program_code',
                 'admissions.admission_number'
             )
             ->first();

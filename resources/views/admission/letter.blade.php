@@ -30,14 +30,15 @@
             <strong>
                <div class="center"  > KOITALEEL SAMOEI UNIVERSITY COLLEGE</div>
                <div class="center" > (A Constituent College of the University of Nairobi)</div>
+                <br>
                <div class="center" > OFFICE OF THE ACADEMIC REGISTRAR</div>
             </strong>
             </center>
             <p>
             <div>P.O. Box 5 - 30307,</div>
             <div>MOSORIOT, KENYA</div>
-            <div>TELEPHONE: 0740 183 955/ 020-4915316/ 020-4915307</div>
-            <div>Email:admission@ksu.ac.ke / regacademic@ksu.ac.ke</div>
+            <div>TELEPHONE: 0740 183 955/ 020-4915316/ 020-4915324</div>
+            <div>Email:admissions@ksu.ac.ke / regacademic@ksu.ac.ke</div>
             <div>Website: www.ksu.ac.ke</div>
             </p>
 
@@ -87,7 +88,8 @@
             bursary to assist you with your educational expenses. If you require government financial support, you
                <strong>MUST </strong> make an application for consideration through the official scholarship and loan application portal
            <span style="color: blue">https//www.hef.co.ke/</span>  should the Government scholarship, loan and bursary not be sufficient to cover the
-               entire cost of your programme, the remaining fee balance will be the responsibility of your parent/guardian. </p>
+               entire cost of your programme, the remaining fee balance will be the responsibility of your parent/guardian. Fees payable for this programme will be @if($student_data->program_code == "3890101") <strong>Ksh 122,400 </strong>  @else <strong>Ksh 183,600 </strong> @endif per year.
+           </p>
 
            <p> Fees is payable in full, before reporting for registration. All fees shall be paid by direct cash deposit to <strong>ABSA
                    BANK </strong>(formerly Barclays Bank)<strong> ELDORET BRANCH, KENYATTA STREET or any branch

@@ -110,7 +110,7 @@
                Samoei University College.</p>
             <p>Yours sincerely,</p>
 
-        <img src="RegistraSign.jpeg" width="200" height="120">
+        <img src="https://res.cloudinary.com/homework-support-com/image/upload/v1690964320/registraSignBk_uf5o6h.png" width="200" height="120">
         <strong>
         <div>CS JOHN NGIGI </div>
         <div>DEPUTY REGISTRAR </div>

@@ -5,8 +5,8 @@
     <div class="row justify-content-center">
     @include('layouts.sidebar')
         <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
+            <div class="card  border-success">
+                <div class="card-header bg-transparent border-success">{{ __('Dashboard') }}</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -16,8 +16,8 @@
                     @endif
 
                         <h3>Download Statistics</h3>
-                        <table class="table table-responsive table-bordered">
-                            <thead>
+                        <table class="table table-responsive table-bordered ">
+                            <thead class="table-primary">
                             <tr>
                                 <th>Program</th>
                                 <th>Students Number</th>

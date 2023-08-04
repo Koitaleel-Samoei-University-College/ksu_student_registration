@@ -15,7 +15,28 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                        <h3>Download Statistics</h3>
+                        <table class="table table-responsive table-bordered">
+                            <thead>
+                            <tr>
+                                <th>Program</th>
+                                <th>Students Number</th>
+                                <th>Male Students</th>
+                                <th>Female Students</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            @foreach($downloadCounts as $downloadCount)
+                                <tr>
+                                    <td>{{ $downloadCount->program }}</td>
+                                    <td>{{ $downloadCount->student_count }}</td>
+                                    <td>{{ $downloadCount->male_count }}</td>
+                                    <td>{{ $downloadCount->female_count }}</td>
+                                </tr>
+                            @endforeach
+                            </tbody>
+                        </table>
+
                 </div>
             </div>
         </div>

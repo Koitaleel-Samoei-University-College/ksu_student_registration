@@ -55,7 +55,7 @@
                         </div>
 
                 <a href="https://drive.google.com/file/d/1m57mbUkDs_6BWV_f2xraH12MDviV0QgX/view?usp=sharing" class="btn joining btn-sm mt-2 mb-3" ><i class="bi bi-file-earmark-pdf-fill"></i> Joining Instructions</a>
-                <a href="https://drive.google.com/file/d/1mVW5Bsl0y9tI4js_1eDbsteRLbm4ilXC/view?usp=sharing" class="btn joining btn-sm mt-2 mb-3" ><i class="bi bi-file-earmark-pdf-fill"></i> Admission Day Checklist</a>
+                <a href="https://drive.google.com/file/d/1mVW5Bsl0y9tI4js_1eDbsteRLbm4ilXC/view?usp=sharing" class="btn btn-primary btn-sm mt-2 mb-3" ><i class="bi bi-file-earmark-pdf-fill"></i> Admission Day Checklist</a>
 
                 <form action="{{route('admission_letter')}}">
                             @csrf

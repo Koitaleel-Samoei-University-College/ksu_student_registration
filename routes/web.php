@@ -41,6 +41,8 @@ Route::group(['auth'], function (){
 //        return $admissionNumberService->numbers_generator();
 //    });
     Route::get('/download-excel', [ExportAdmissionNumberController::class, 'index'])->name('download_admission_list');
+    Route::get('/student_upload', [StudentListController::class, 'upload'])->name('upload_students_list');
+    Route::post('/student_upload', [StudentListController::class, 'store'])->name('students_import');
 });
 
 

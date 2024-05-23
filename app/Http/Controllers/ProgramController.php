@@ -63,24 +63,27 @@ class ProgramController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
-     * @return Response
+     * @param Program $program
+     * @return Application|Factory|View
      */
-    public function edit($id)
+    public function edit(Program $program)
     {
-        //
+        return view('program.edit', compact('program'));
     }
+
 
     /**
      * Update the specified resource in storage.
      *
      * @param Request $request
-     * @param  int  $id
-     * @return Response
+     * @param Program $program
+     * @return RedirectResponse
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Program $program)
     {
-        //
+        $program->update($request->all());
+
+        return redirect()->route('programs.index')->with('success', 'Program updated successfully!');
     }
 
     /**

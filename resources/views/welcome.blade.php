@@ -48,13 +48,13 @@
 
                         <div class="collapse" id="collapseWidthExample">
                                 <ol class="mt2 mb-2 list-group list-group-numbered">
-                                    <li class="list-group-item">To Download your Admission Letter, Enter your KCSE Index Number Below. <i>The format is <b>03106106092/2022</b></i> </li>
+                                    <li class="list-group-item">To Download your Admission Letter, Enter your KCSE Index Number Below. <i>The format is <b>03106106092/2023</b></i> </li>
                                     <li class="list-group-item"> Then Click the green Button "Download Admission Letter" to download your letter.</li>
                                     <li class="list-group-item">For instruction on the Admission and Joining Process Click on the "Joining Instructions" Button </li>
                                 </ol>
                         </div>
 
-                <a href="https://drive.google.com/file/d/1m57mbUkDs_6BWV_f2xraH12MDviV0QgX/view?usp=sharing" class="btn joining btn-sm mt-2 mb-3" ><i class="bi bi-file-earmark-pdf-fill"></i> Joining Instructions</a>
+                <a href="https://drive.google.com/file/d/1FF98O997kXm5Z9QrjOCdYLJObKCqWdEy/view?usp=sharing" class="btn joining btn-sm mt-2 mb-3" ><i class="bi bi-file-earmark-pdf-fill"></i> Joining Instructions</a>
                 <a href="https://drive.google.com/file/d/1ZjY0JmR54fy3ohhb0tDTQhILBm5yUxds/view?usp=sharing" class="btn btn-success btn-sm mt-2 mb-3" ><i class="bi bi-file-earmark-pdf-fill"></i> Admission Day Checklist</a>
 
                 <form action="{{route('admission_letter')}}">

@@ -30,6 +30,7 @@ Route::group(['auth'], function (){
     Route::post('file-import', [KuccpsUploadController::class, 'fileImport'])->name('file-import');
     Route::get('file-import', [KuccpsUploadController::class, 'index'])->name('file-import');
     Route::get('/students', [StudentListController::class, 'index'])->name('students');
+
     Route::resource('programs', ProgramController::class);
 
     Route::get('/admission_letters', [AdmissionLetterController::class, 'index'])->name('admission_letters');

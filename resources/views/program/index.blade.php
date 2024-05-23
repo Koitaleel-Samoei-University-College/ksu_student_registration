@@ -36,7 +36,7 @@
                                 <td>{{$program->school_name}}</td>
                                 <td>{{$program->program_name}}</td>
                                 <td>{{$program->program_code}}</td>
-                                <td></td>
+                                <td><a href="{{route('programs.edit', $program->id)}}">Edit</a></td>
                             </tr>
                             @endforeach
                             </tbody>

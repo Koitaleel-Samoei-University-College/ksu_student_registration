@@ -90,7 +90,7 @@ class ProgramController extends Controller
      * Remove the specified resource from storage.
      *
      * @param  int  $id
-     * @return Response
+//     * @return Response
      */
     public function destroy($id)
     {

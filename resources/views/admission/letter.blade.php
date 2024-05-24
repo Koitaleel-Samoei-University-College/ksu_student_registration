@@ -61,7 +61,7 @@
 
         <p class="text-decoration-underline"> <strong>ADMISSION INTO THE UNIVERSITY COLLEGE FOR 2024/2025 ACADEMIC YEAR  </strong> </p>
         <p>
-        <p>Following your application for admission to undertake undergraduate studies, I am pleased to inform you that you have been offered admission to <strong>Koitaleel Samoei University College (KSUC) </strong>, in the School of <strong>
+        <p>Following your application for admission to undertake undergraduate studies, I am pleased to inform you that you have been offered admission to <strong>Koitaleel Samoei University College (KSUC) </strong>, in the <strong>
                 {{strtoupper($school->school_name)}}</strong> for a course leading to the degree of <strong>{{strtoupper($student_data->program)}}</strong></p>
 
             <p>This offer is made on the basis of the copies of the certificates, which you presented with your application. You should therefore bring with you the originals for verification on the registration day.  Please note that any information found to be untrue/incorrect will automatically lead to your disqualification and expulsion from the College. The College also reserves the right to report you to the relevant government agents for action.</p>

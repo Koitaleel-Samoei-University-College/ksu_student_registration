@@ -21,6 +21,7 @@ class Student extends Model
         'town',
         'program_code',
         'program',
-        'secondary_school'
+        'secondary_school',
+        'admission_status'
     ];
 }

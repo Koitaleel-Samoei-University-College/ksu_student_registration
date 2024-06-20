@@ -27,7 +27,8 @@ class StudentListController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'file' => 'required'
+            'file' => 'required',
+            'admission_status' => 'required',
         ]);
         try {
             Excel::import(new StudentListImport, $request->file('file')->store('temp'));

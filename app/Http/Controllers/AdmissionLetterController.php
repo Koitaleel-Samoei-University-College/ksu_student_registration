@@ -67,12 +67,13 @@ class AdmissionLetterController extends Controller
                 'students.town',
                 'students.program',
                 'students.program_code',
+                'students.admission_status',
                 'admissions.admission_number'
             )
             ->first();
         //get school name
         $school = DB::table('programs')
-            ->where('program_name', '=' , $student_data->program)
+            ->where('program_code', '=' , $student_data->program_code)
             ->select('school_name')
             ->first();
 //        get the surname from name

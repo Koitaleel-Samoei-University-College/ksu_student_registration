@@ -43,7 +43,13 @@
             <table style="width: 100%;">
                 <tr>
                     <td style="text-align: left;"><strong>Your Ref: {{$student_data->indexNumber}}</strong></td>
-                    <td style="text-align: right;"><strong>Date:  May 23, 2024</strong></td>
+                    <td style="text-align: right;">
+                        @if($student_data->admission_status == "Inter_University_Transfer")
+                            Date: June 19, 2024
+                        @else
+                        <strong>Date:  May 23, 2024</strong>
+                        @endif
+                    </td>
                 </tr>
             </table>
 
@@ -109,7 +115,11 @@
 
             <p>Yours sincerely,</p>
 
+            @if($student_data->admission_status == "Inter_University_Transfer")
+                <img src="https://res.cloudinary.com/homework-support-com/image/upload/v1718903866/Screenshot_from_2024-06-20_20-11-05-removebg-preview_lrhapm.png" width="150" height="120">
+            @else
         <img src="https://res.cloudinary.com/homework-support-com/image/upload/v1716479290/signatureKsu_tk8xra.jpg" width="150" height="120">
+            @endif
         <strong>
         <div>CS JOHN NGIGI </div>
         <div>DEPUTY REGISTRAR ACADEMIC </div>

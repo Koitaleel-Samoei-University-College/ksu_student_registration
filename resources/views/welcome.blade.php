@@ -43,6 +43,7 @@
                         {{ session('error') }}
                     </div>
                 @endif
+                <div class=" ml-2 mr-2 d-grid gap-2 d-md-flex justify-content-md-center">
 
                 <button class=" btn btn-primary btn-sm mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample"> Download Instructions</button>
 
@@ -54,10 +55,11 @@
                                 </ol>
                         </div>
 
+
                 <a href="https://drive.google.com/file/d/1FF98O997kXm5Z9QrjOCdYLJObKCqWdEy/view?usp=sharing" class="btn joining btn-sm mt-2 mb-3" ><i class="bi bi-file-earmark-pdf-fill"></i> Joining Instructions</a>
                 <a href="https://drive.google.com/file/d/12ewX99nszaRkfVYUK63bacjQcXfh9sf1/view?usp=sharing" class="btn btn-success btn-sm mt-2 mb-3" ><i class="bi bi-file-earmark-pdf-fill"></i> Admission Day Checklist</a>
                 <a href="https://drive.google.com/file/d/1Sjg9eSoIpw267KJaarCdqXhwn4elMBTN/view?usp=sharing" class="btn btn-warning btn-sm mt-2 mb-3" ><i class="bi bi-file-earmark-pdf-fill"></i> Fee Payment Procedure</a>
-
+                </div>
                 <form action="{{route('admission_letter')}}">
                             @csrf
                             <div class="card mt-2">
@@ -68,7 +70,7 @@
                                     </div>
                                 </div>
                                 <div class="card-footer d-grid gap-2 d-md-flex justify-content-md-end">
-                                    <button class="btn btn-success btn-sm"><i class="bi bi-file-earmark-pdf"></i> Download Admission Letter</button>
+                                    <button class="btn btn-success btn-sm" name="admission_letter"><i class="bi bi-file-earmark-pdf"></i> Download Admission Letter</button>
                                 </div>
 
                             </div>

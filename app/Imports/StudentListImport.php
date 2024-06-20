@@ -15,6 +15,7 @@ class StudentListImport implements ToCollection, WithStartRow, WithValidation
     {
         foreach ($collection as $row)
         {
+            $status = request()->input('admission_status');
             $student = Student::create([
                 'indexNumber' => $row[1],
                 'name'=> $row[3],
@@ -27,9 +28,9 @@ class StudentListImport implements ToCollection, WithStartRow, WithValidation
                 'post_code'=> $row[10],
                 'town'=> $row[11],
                 'program_code'=> $row[12],
-                'program'=> $row[13]
+                'program'=> $row[13],
+                'admission_status'=> $status,
             ]);
-
             Admission::create([
                 'student_id' => $student->id,
                 'admission_number' => $row[2],  // Adjust column index based on your data

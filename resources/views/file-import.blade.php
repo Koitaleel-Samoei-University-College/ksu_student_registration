@@ -30,7 +30,7 @@
                                         @enderror
                                     </div>
                                 </div>
-                                <button class="btn btn-primary btn-sm"><i class="bi bi-cloud-upload"></i> Import data</button>
+                                <button class="btn btn-primary btn-sm"><i class="bi bi-cloud-upload"></i> Import Student data</button>
                             </form>
                     </div>
                 </div>

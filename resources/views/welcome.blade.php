@@ -31,7 +31,7 @@
 
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <div class="flex justify-center pt-8  sm:pt-0">
-                   <img src="{{asset('logo.png')}}" alt="logo" class="rounded">
+                   <img src="{{asset('logo.png')}}" alt="logo" class="rounded" >
                 </div>
                 <div class="mt-3" >
                     <h3 class="flex justify-center">KOITALEEL SAMOEI UNIVERSITY COLLEGE</h3>
@@ -60,22 +60,38 @@
                 <a href="https://drive.google.com/file/d/12ewX99nszaRkfVYUK63bacjQcXfh9sf1/view?usp=sharing" class="btn btn-success btn-sm mt-2 mb-3" ><i class="bi bi-file-earmark-pdf-fill"></i> Admission Day Checklist</a>
                 <a href="https://drive.google.com/file/d/1Sjg9eSoIpw267KJaarCdqXhwn4elMBTN/view?usp=sharing" class="btn btn-warning btn-sm mt-2 mb-3" ><i class="bi bi-file-earmark-pdf-fill"></i> Fee Payment Procedure</a>
                 </div>
+
                 <form action="{{route('admission_letter')}}">
-                            @csrf
-                            <div class="card mt-2">
-                                <div class="card-body">
-                                    <div>
-                                        <label class="form-label"><b>KCSE Index Number</b> </label>
-                                        <input type="text" class="form-control" name="admissionNumber" required placeholder="Enter Index Number Here !">
-                                    </div>
-                                </div>
-                                <div class="card-footer d-grid gap-2 d-md-flex justify-content-md-end">
-                                    <button class="btn btn-success btn-sm" name="admission_letter"><i class="bi bi-file-earmark-pdf"></i> Download Admission Letter</button>
-                                </div>
-
+                    @csrf
+                    <div class="card mt-2">
+                        <div class="card-body">
+                            <div>
+                                <label class="form-label"><b>KCSE Index Number</b> </label>
+                                <input type="text" class="form-control" name="admissionNumber" required placeholder="Enter Index Number Here !">
                             </div>
-                        </form>
+                        </div>
+                        <div class="card-footer d-grid gap-2 d-md-flex justify-content-md-end">
+                            <button class="btn btn-success btn-sm" name="admission_letter"><i class="bi bi-file-earmark-pdf"></i> Download Admission Letter</button>
+                        </div>
 
+                    </div>
+                </form>
+                <br/>
+                <form action="{{route('fees_pdf')}}">
+                    @csrf
+                    <div class="card mt-2">
+                        <div class="card-body">
+                            <div>
+                                <label class="form-label"><b>Admission Number</b> </label>
+                                <input type="text" class="form-control" name="admission_number" required placeholder="Enter Admission Number Here !">
+                            </div>
+                        </div>
+                        <div class="card-footer d-grid gap-2 d-md-flex justify-content-md-end">
+                            <button class="btn btn-success btn-sm" ><i class="bi bi-file-earmark-pdf"></i> Download Fees Letter</button>
+                        </div>
+
+                    </div>
+                </form>
 
             </div>
         </div>

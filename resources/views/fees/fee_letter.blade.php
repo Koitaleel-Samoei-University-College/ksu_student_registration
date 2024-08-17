@@ -24,7 +24,7 @@
 </head>
 <body>
 
-            <center ><img src="https://res.cloudinary.com/homework-support-com/image/upload/v1691054617/logo_foxoai.png" width="60" height="60">
+            <center ><img src="https://res.cloudinary.com/homework-support-com/image/upload/v1691054617/logo_foxoai.png" width="80" height="80">
             <strong>
                <div class="center"  > KOITALEEL SAMOEI UNIVERSITY COLLEGE</div>
                <div class="center" > (A Constituent College of the University of Nairobi)</div>
@@ -43,18 +43,17 @@
             <br>
             <table style="width: 100%;">
                 <tr>
-                    <td style="text-align: left;"><strong>Your Ref: {{$student->indexNumber}}</strong></td>
+                    <td style="text-align: left;"><strong>Ref: {{$admission->admission_number}}</strong></td>
                     <td style="text-align: right;">
                         <strong>Date:  August 15, 2024</strong>
                     </td>
                 </tr>
             </table>
-
-            <p><strong>Admission Number: {{$admission->admission_number}}</strong> </p>
+            <br/>
             <div><strong>{{$student->name}}</strong></div>
             <div><strong>P.O.BOX {{strtoupper($student->address)}} - {{$student->post_code}} </strong></div>
             <div><strong>{{$student->town}}. </strong></div>
-            <p><strong>0{{$student->phone}}, 0{{$student->alternative_phone}}</strong> </p>
+{{--            <p><strong>0{{$student->phone}}, 0{{$student->alternative_phone}}</strong> </p>--}}
         <p><strong>Dear </strong>
         @if($student->gender === 'M')<strong> MR </strong> @endif
            @if($student->gender === 'F') <strong>MS </strong> @endif
